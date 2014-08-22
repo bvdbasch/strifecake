@@ -1,10 +1,7 @@
 <?php
-  $bg = array('gael.jpg', 'lyrie.jpg', 'nestra.jpg', 'strife.jpg', 'tempra.jpg', 'vorbis.jpg' );    // array of background filenames
-
-  $i = rand(0, count($bg)-1);                                                                       // generate random number size of the array
-  $selectedBg = "$bg[$i]";                                                                          // set variable equal to which random filename was chosen
+    $backgroundArray = array('gael.jpg', 'lyrie.jpg', 'nestra.jpg', 'strife.jpg', 'tempra.jpg', 'vorbis.jpg' );
+    $bgIMG = $backgroundArray[array_rand($backgroundArray)];
 ?>
-
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/Resources/CSS/main.css'); ?>">
@@ -17,7 +14,7 @@
 	<!-- bxSlider CSS file -->
 	<link href="<?php echo theme_url('/Resources/Slider/jquery.bxslider.css'); ?>" rel="stylesheet" />
     <style>
-        body{background: url(<?php echo theme_url("/Resources/IMG/$selectedBg"); ?>) no-repeat;}
+        body{background: url(<?php echo theme_url("/Resources/IMG/".$bgIMG); ?>) no-repeat;}
     </style>
 </head>
 
