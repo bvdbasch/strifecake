@@ -82,6 +82,12 @@ body{
     overflow: hidden;
 }
 
+    ul#bxslider {
+        margin: 180px;
+        padding: 0px;
+    }
+
+
 
 /* Social icons */
 #Social{
