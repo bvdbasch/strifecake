@@ -87,8 +87,10 @@
         <div id="BarBlue"></div>
         <div id="CategoryList">
         
+           
             <?php if(has_posts()) : while(posts()) : ?>
     <article>
+         <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
         <header>
             <h1>
                 <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
