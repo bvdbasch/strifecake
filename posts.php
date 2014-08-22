@@ -3,20 +3,18 @@
     $bgIMG = $backgroundArray[array_rand($backgroundArray)];
 
     //create Category Array, important update this if you add a new category
-    $categories = [
-                    'News' => 'blue',
-                    'Media' => 'color', 
-                    'Learn' => 'color', 
-                    'competative' => 'color' 
-                 ];
+    $categories = array(
+                    'news' => 'blue',
+                    'media' => 'pink', 
+                    'learn' => 'butt', 
+                    'competative' => 'green' 
+                );
 
     //Fetch category
-    echo category_title();
     $category = end((explode('/', current_url()))); 
-        //gebruik in een article                        
-        //article_category()                            
-
-    if (in_array($category, $categories)) {
+    //gebruik in een article                        
+    //echo article_category();
+    if (array_key_exists($category, $categories)) {
         $color = $categories[$category];
     }else{
         $color = "basic";
