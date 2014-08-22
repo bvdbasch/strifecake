@@ -2,9 +2,25 @@
     $backgroundArray = array('gael.jpg', 'lyrie.jpg', 'nestra.jpg', 'strife.jpg', 'tempra.jpg', 'vorbis.jpg' );
     $bgIMG = $backgroundArray[array_rand($backgroundArray)];
 
+    //create Category Array, important update this if you add a new category
+    $categories = [
+                    'News' => 'blue',
+                    'Media' => 'color', 
+                    'Learn' => 'color', 
+                    'competative' => 'color' 
+                 ];
+
     //Fetch category
-    //$category = end((explode('/', current_url())));
     echo category_title();
+    $category = end((explode('/', current_url()))); 
+        //gebruik in een article                        
+        //article_category()                            
+
+    if (in_array($category, $categories)) {
+        $color = $categories[$category];
+    }else{
+        $color = "basic";
+    }
 ?>
 <!DOCTYPE html>
 <head>
