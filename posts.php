@@ -44,9 +44,18 @@
 
         <ul id="menu">
         <li class="nav"><a href="<?php echo base_url(); ?>">&nbsp Home &nbsp</a></li>
-        <?php while(categories()): ?>
+<?php 
+            while(categories()) { 
+?>
        <li class="nav"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>">&nbsp <?php echo category_title(); ?> &nbsp</a></li>
-        <?php endwhile; ?>
+<?php 
+            } 
+?>
+<li>
+ <form action="<?php echo search_url();?>" method="post">
+    <input type="search" class="search-box" id="term" name="term" value="<?php echo search_term();?>">
+ </form>
+</li>
     </ul>
     </div>
     
