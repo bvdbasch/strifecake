@@ -58,17 +58,15 @@
 </li>
     </ul>
     </div>
-    
-    
     <div id="<?php echo $color ?>"></div>
-    
-    
     <!-- END MENU -->
 
     <!-- SLIDER STARTS HERE -->
     <script>
         $(document).ready(function(){
-            $('.bxslider').bxSlider();
+            $('.bxslider').bxSlider({
+                      auto: true
+});
         });
     </script>
 
