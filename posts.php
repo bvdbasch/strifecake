@@ -7,17 +7,17 @@
 
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/css/main.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/Resources/CSS/main.css'); ?>">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
     <!-- jQuery library (served from Google) -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<!-- bxSlider Javascript file -->
-	<script src="<?php echo theme_url('/slider/resources/jquery.bxslider.min.js'); ?>"></script>
+	<script src="<?php echo theme_url('/Resources/Slider/jquery.bxslider.min.js'); ?>"></script>
 	<!-- bxSlider CSS file -->
-	<link href="<?php echo theme_url('/slider/resources/jquery.bxslider.css'); ?>" rel="stylesheet" />
+	<link href="<?php echo theme_url('/Resources/Slider/jquery.bxslider.css'); ?>" rel="stylesheet" />
     <style>
-        body{background: url(<?php echo theme_url("/img/$selectedBg"); ?>) no-repeat;}
+        body{background: url(<?php echo theme_url("/Resources/IMG/$selectedBg"); ?>) no-repeat;}
     </style>
 </head>
 
@@ -56,7 +56,7 @@
     
     <!-- SOCIAL ICONS START HERE -->
     <div id="Social">
-        <img class="social" src="<?php echo theme_url('/social/YouTubeIcon.png'); ?>" alt="Find us on YouTube!">
+        <img class="social" src="<?php echo theme_url('/Resources/IMG/Social/YouTubeIcon.png'); ?>" alt="Find us on YouTube!">
     </div>
     <!-- END SOLCIAL ICONS -->
     
