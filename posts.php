@@ -83,19 +83,34 @@
 
     <!-- CATEGORIES START HERE -->
     <div id="LeftContainer">
-        <div id="CategoryLeft">This will contain the category header image - News
+        <div id="CategoryLeft">News
         <div id="BarBlue"></div>
-        <div id="CategoryList">Look mom! Content!</div>
+        <div id="CategoryList">
+        
+            <?php if(has_posts()) : while(posts()) : ?>
+    <article>
+        <header>
+            <h1>
+                <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+            </h1>
+            <small><?php echo article_date(); ?></small>
+        </header>
+        <p><?php echo article_description(); ?></p>
+    </article>
+<?php endwhile; endif; ?>
+<!-- Pagination -->
+            
+        </div>
         </div>
 
-        <div id="CategoryRight">This will contain the category header image - Learn
-        <div id="BarYellow"></div>
+        <div id="CategoryRight">Learn
+        <div id="BarOrange"></div>
         <div id="CategoryList">Look mom! Content!</div>
         </div>
 
     </div>
 
-    <div id="RightContainer">This is the sidebar. It would like some widgets</div>>
+    <div id="RightContainer">This is the sidebar. It would like some widgets</div>
 
     </div>
 
