@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/css/main.css'); ?>">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
+    <!-- jQuery library (served from Google) -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="<?php echo theme_url('/slider/resources/jquery.bxslider.min.js'); ?>"></script>
+	<!-- bxSlider CSS file -->
+	<link href="<?php echo theme_url('/slider/resources/jquery.bxslider.css'); ?>" rel="stylesheet" />
     <style>
         body{background: url(<?php echo theme_url("/img/$selectedBg"); ?>) no-repeat;}
     </style>
@@ -20,6 +26,7 @@
     
     <!-- MENU STARTS HERE -->
     <div id="Navigation">
+    
         <ul id="menu">
         <li class="nav"><a href="<?php echo base_url(); ?>">&nbsp Home &nbsp</a></li>
         <?php while(categories()): ?>
@@ -31,12 +38,25 @@
     <!-- END MENU -->
     
     <!-- SLIDER STARTS HERE -->
-    <div id="Slider">This area will hold the slider</div>
+    <script>
+        $(document).ready(function(){
+		$('.bxslider').bxSlider();
+        });
+    </script>
+    
+    <div id="Slider">
+        <ul class="bxslider">
+		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
+		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
+		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
+		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
+	   </ul>
+    </div>
     <!-- END SLIDER -->
     
     <!-- SOCIAL ICONS START HERE -->
-    <div class="" id="Social">
-        This area will contain social buttons to facebook and twitter
+    <div id="Social">
+        <img class="social" src="<?php echo theme_url('/social/YouTubeIcon.png'); ?>" alt="Find us on YouTube!">
     </div>
     <!-- END SOLCIAL ICONS -->
     
@@ -59,8 +79,7 @@
     </div>
     
     <!-- END CATEGORIES -->
-    
-    I changed something in the file again
+
     
 </body>
 </html>
