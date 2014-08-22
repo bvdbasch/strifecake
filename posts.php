@@ -74,10 +74,10 @@
 
     <div id="Slider">
         <ul class="bxslider">
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></li>
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></li>
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></li>
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></li>
+            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></a></li>
+            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></a></li>
+            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></a></li>
+            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></a></li>
         </ul>
     </div>
     <!-- END SLIDER -->
