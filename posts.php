@@ -86,28 +86,59 @@
         <div id="CategoryLeft">News
         <div id="BarBlue"></div>
         <div id="CategoryList">
-        
-           
-            <?php if(has_posts()) : while(posts()) : ?>
-    <article>
-         <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
-        <header>
-            <h1>
-                <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-            </h1>
-            <small><?php echo article_date(); ?></small>
-        </header>
-        <p><?php echo article_description(); ?></p>
-    </article>
-<?php endwhile; endif; ?>
+
+<!-- NEWS CATEGORY-->
+<?php 
+    if (has_posts()) {
+        while (posts()) {
+            if ( article_category() == 'news') { 
+?>
+            <article>
+                 <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
+                <header>
+                    <h1>
+                        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+                    </h1>
+                    <small><?php echo article_date(); ?></small>
+                </header>
+                <p><?php echo article_description(); ?></p>
+            </article>
+<?php 
+            }
+        }
+    }
+?>
+
 <!-- Pagination -->
-            
+
+<!-- END NEWS CATEGORY-->
         </div>
         </div>
 
         <div id="CategoryRight">Learn
-        <div id="BarOrange"></div>
-        <div id="CategoryList">Look mom! Content!</div>
+            <div id="BarOrange"></div>
+                <div id="CategoryList">
+<?php 
+    if (has_posts()) {
+        while (posts()) {
+            if ( article_category() == 'learn') { 
+?>
+            <article>
+                 <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
+                <header>
+                    <h1>
+                        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+                    </h1>
+                    <small><?php echo article_date(); ?></small>
+                </header>
+                <p><?php echo article_description(); ?></p>
+            </article>
+<?php 
+            }
+        }
+    }
+?>
+            </div>
         </div>
 
     </div>
