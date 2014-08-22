@@ -46,7 +46,7 @@
     
     <div id="Slider">
         <ul class="bxslider">
-		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
+		  <li><img src="<?php echo theme_url('/Resources/Slider/Images/strife-school-header.png') ?>" /></li>
 		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
 		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
 		  <li><img src="http://bxslider.com/images/home_slides/picto.png" /></li>
