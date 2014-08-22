@@ -4,10 +4,10 @@
 
     //create Category Array, important update this if you add a new category
     $categories = array(
-                    'news' => 'blue',
+                    'news' => 'BarBlue',
                     'media' => 'pink', 
-                    'learn' => 'butt', 
-                    'competative' => 'green' 
+                    'learn' => 'BarOrange', 
+                    'competitive' => 'BarGreen' 
                 );
 
     //Fetch category
@@ -17,13 +17,13 @@
     if (array_key_exists($category, $categories)) {
         $color = $categories[$category];
     }else{
-        $color = "basic";
+        $color = "BarBlue";
     }
 ?>
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/Resources/CSS/main.css'); ?>">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="<?php echo theme_url('/Resources/CSS/main.css'); ?>" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
 
     <!-- jQuery library (served from Google) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -49,7 +49,11 @@
         <?php endwhile; ?>
     </ul>
     </div>
-    <div id="BarBlue"></div>
+    
+    
+    <div id="<?php echo $color ?>"></div>
+    
+    
     <!-- END MENU -->
 
     <!-- SLIDER STARTS HERE -->
@@ -61,9 +65,9 @@
 
     <div id="Slider">
         <ul class="bxslider">
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-header.png') ?>" /></li>
+            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></li>
             <li><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></li>
-            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-header.png') ?>" /></li>
+            <li><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></li>
             <li><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></li>
         </ul>
     </div>
@@ -71,7 +75,9 @@
 
     <!-- SOCIAL ICONS START HERE -->
     <div id="Social">
-        <img class="social" src="<?php echo theme_url('/Resources/IMG/Social/YouTubeIcon.png'); ?>" alt="Find us on YouTube!">
+        <img src="<?php echo theme_url('/Resources/IMG/Social/rss.png') ?>" /> &nbsp
+        <img src="<?php echo theme_url('/Resources/IMG/Social/facebook.png') ?>" /> &nbsp
+        <img src="<?php echo theme_url('/Resources/IMG/Social/twitter.png') ?>" /> &nbsp
     </div>
     <!-- END SOLCIAL ICONS -->
 
