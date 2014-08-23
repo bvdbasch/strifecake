@@ -7,7 +7,7 @@ $categories = array(
                 'competitive' => 'BarGreen' 
             );
 
-//gebruik in een article                        
+//Use in an article                      
 //echo article_category();
 if (array_key_exists($page, $categories)) {
     $color = $categories[$page];
