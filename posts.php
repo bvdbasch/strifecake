@@ -1,24 +1,8 @@
 <?php
-    $backgroundArray = array('gael.jpg', 'lyrie.jpg', 'nestra.jpg', 'strife.jpg', 'tempra.jpg', 'vorbis.jpg' );
-    $bgIMG = $backgroundArray[array_rand($backgroundArray)];
-
-    //create Category Array, important update this if you add a new category
-    $categories = array(
-                    'news' => 'BarBlue',
-                    'media' => 'pink', 
-                    'learn' => 'BarOrange', 
-                    'competitive' => 'BarGreen' 
-                );
-
-    //Fetch category
-    $category = end((explode('/', current_url()))); 
-    //gebruik in een article                        
-    //echo article_category();
-    if (array_key_exists($category, $categories)) {
-        $color = $categories[$category];
-    }else{
-        $color = "BarBlue";
-    }
+    //the code for a random background is found here
+    include(theme_path()."Partials/RandomBackground.php");
+    //the code for the Category colors has to be maintained in CategoryColor.php
+    include(theme_path()."Partials/CategoryColor.php");
 ?>
 <!DOCTYPE html>
 <head>
@@ -39,53 +23,18 @@
 <body>
 <div id="MainWrapper">
 
-    <!-- MENU STARTS HERE -->
-    <div id="Navigation">
-
-        <ul id="menu">
-        <li class="nav"><a href="<?php echo base_url(); ?>">&nbsp Home &nbsp</a></li>
-<?php 
-            while(categories()) { 
+<!-- MENU STARTS HERE -->
+<?php
+    include(theme_path()."Partials/Menu.php");
 ?>
-       <li class="nav"><a href="<?php echo category_url(); ?>" title="<?php echo category_title(); ?>">&nbsp <?php echo category_title(); ?> &nbsp</a></li>
-<?php 
-            } 
-?>
-<li>
- <form action="<?php echo search_url();?>" method="post">
-    <input type="search" class="search-box" id="term" name="term" placeholder="Search" value="<?php echo search_term();?>">
- </form>
-</li>
-    </ul>
-    </div>
-    <div id="<?php echo $color ?>"></div>
-    <!-- END MENU -->
+<!-- END MENU -->
 
     <!-- SLIDER STARTS HERE -->
-    <script>
-        $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                      auto: true
-});
-        });
-    </script>
-
-    <div id="Slider">
-        <ul class="bxslider">
-            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></a></li>
-            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></a></li>
-            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/strife-school-slider.png') ?>" /></a></li>
-            <li><a href="http://www.google.nl"><img src="<?php echo theme_url('/Resources/IMG/Slider/test.jpg') ?>" /></a></li>
-        </ul>
-    </div>
+    <?php include(theme_path()."Partials/Slider.php"); ?>
     <!-- END SLIDER -->
 
     <!-- SOCIAL ICONS START HERE -->
-    <div id="Social">
-        <img src="<?php echo theme_url('/Resources/IMG/Social/rss.png') ?>" /> &nbsp
-        <img src="<?php echo theme_url('/Resources/IMG/Social/facebook.png') ?>" /> &nbsp
-        <img src="<?php echo theme_url('/Resources/IMG/Social/twitter.png') ?>" /> &nbsp
-    </div>
+    <?php include(theme_path()."Partials/SocialIcons.php"); ?>
     <!-- END SOLCIAL ICONS -->
 
     <!-- CATEGORIES START HERE -->
@@ -99,18 +48,7 @@
     if (has_posts()) {
         while (posts()) {
             if ( article_category() == 'news') { 
-?>
-            <article>
-                 <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
-                <header>
-                    <h1>
-                        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-                    </h1>
-                    <small><?php echo article_date(); ?></small>
-                </header>
-                <p><?php echo article_description(); ?></p>
-            </article>
-<?php 
+                include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
             }
         }
     }
@@ -129,18 +67,7 @@
     if (has_posts()) {
         while (posts()) {
             if ( article_category() == 'learn') { 
-?>
-            <article>
-                 <img src="<?php echo article_custom_field("thumb",theme_url('/assets/img/fallback.png'));?>">
-                <header>
-                    <h1>
-                        <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-                    </h1>
-                    <small><?php echo article_date(); ?></small>
-                </header>
-                <p><?php echo article_description(); ?></p>
-            </article>
-<?php 
+                include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
             }
         }
     }
