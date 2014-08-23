@@ -7,12 +7,10 @@ $categories = array(
                 'competitive' => 'BarGreen' 
             );
 
-//Fetch category
-$category = end((explode('/', current_url()))); 
 //gebruik in een article                        
 //echo article_category();
-if (array_key_exists($category, $categories)) {
-    $color = $categories[$category];
+if (array_key_exists($page, $categories)) {
+    $color = $categories[$page];
 } else{
     $color = "BarBlue";
 }

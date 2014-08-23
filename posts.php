@@ -1,4 +1,8 @@
 <?php
+    //Fetch Check Which Page we at. Important for what Section we should Load.
+    //Either Load Frontpage, Or a Category Page
+    $page = end((explode('/', current_url()))); 
+
     //the code for a random background is found here
     include(theme_path()."Partials/RandomBackground.php");
     //the code for the Category colors has to be maintained in CategoryColor.php
@@ -37,50 +41,14 @@
     <?php include(theme_path()."Partials/SocialIcons.php"); ?>
     <!-- END SOLCIAL ICONS -->
 
-    <!-- CATEGORIES START HERE -->
-    <div id="LeftContainer">
-        <div id="CategoryLeft">News
-        <div id="BarBlue"></div>
-        <div id="CategoryList">
-
-<!-- NEWS CATEGORY-->
 <?php 
-    if (has_posts()) {
-        while (posts()) {
-            if ( article_category() == 'news') { 
-                include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
-            }
-        }
+    if ($page == 'learn' || $page == 'news' ){
+        include(theme_path()."Pages/Categorypage.php");
+    }else{
+        include(theme_path()."Pages/Frontpage.php");
     }
+
 ?>
 
-<!-- Pagination -->
-
-<!-- END NEWS CATEGORY-->
-        </div>
-        </div>
-
-        <div id="CategoryRight">Learn
-            <div id="BarOrange"></div>
-                <div id="CategoryList">
-<?php 
-    if (has_posts()) {
-        while (posts()) {
-            if ( article_category() == 'learn') { 
-                include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
-            }
-        }
-    }
-?>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="RightContainer">This is the sidebar. It would like some widgets</div>
-
-    </div>
-
-    <!-- END CATEGORIES -->
 </body>
 </html>
