@@ -8,11 +8,13 @@
 <?php 
             } 
 ?>
+<!-- Start Searchbar-->
 <li>
  <form action="<?php echo search_url();?>" method="post">
     <input type="search" class="search-box" id="term" name="term" placeholder="Search" value="<?php echo search_term();?>">
  </form>
 </li>
+<!-- End Searchbar -->
     </ul>
     </div>
     <div id="<?php echo $color ?>"></div>
