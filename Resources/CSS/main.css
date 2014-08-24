@@ -30,6 +30,8 @@ body{
     padding: 0px;
     color: black;
     background-color: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a:link {color: #009AE2; text-decoration: none; font-weight: 700;}       /* unvisited link */

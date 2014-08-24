@@ -25,7 +25,7 @@
     <link href="<?php echo theme_url('/Resources/Slider/jquery.bxslider.css'); ?>" rel="stylesheet" />
     
     <style>
-        body{background: url(<?php echo theme_url("/Resources/IMG/Backgrounds/".$bgIMG); ?>) no-repeat;}
+        body{background-image: url(<?php echo theme_url("/Resources/IMG/Backgrounds/".$bgIMG); ?>)}
     </style>
 </head>
 
@@ -60,5 +60,89 @@
         }
     ?>
 </div>
+    a<br><br>
+    a<br><br>
+    a<br><br>
+    a<br><br>
+    a
+    a<br><br>
+    
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    
+    a<br><br>
+    
+    
+    
+    
+    a<br><br>v
+    
+    a<br><br>a<br><br>a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    
+    a<br><br>
+    
+    a<br><br>
+    
+    
+    
+    v
+    v
+    a<br><br>
+    a<br><br>
+    v
+    
+    v
+    
+    a<br><br>
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    a<br><br>
+    
+    a<br><br>
+    
+    a<br><br>
+    a<br><br>
+    a<br><br>
+    a
+    a
+    a
+    a
+    a
+    a
+    
+    a
+    a
+    a
+    a
+    a
+    a
+    a
+    
+    a
+    
 </body>
 </html>
