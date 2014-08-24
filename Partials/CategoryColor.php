@@ -1,10 +1,11 @@
 <?php
 //create Category Array, important update this if you add a new category
 $categories = array(
-                'news' => 'Blue',
-                'media' => 'pink', 
+                'news' => 'Green',
+                'media' => 'Red', 
                 'learn' => 'Orange', 
-                'competitive' => 'Green' 
+                'competitive' => 'Purple',
+                'blog' => 'Gray'
             );
 
 //Use in an article                      

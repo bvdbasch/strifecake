@@ -5,6 +5,33 @@ body{
     color: black;
 }
 
+/*
+
+Home
+Light:  #009ae2
+Dark:   #0072a7
+
+News
+Light:  #16992f
+Dark:   #0f7c23
+
+Media
+Light:  #f21818
+Dark:   #c31515
+
+Learn
+Light:  #f2ae00
+Dark:   #b17f00
+
+Competitive
+Light:  #4f009d
+Dark:   #3c0077
+
+Blog
+Light:  #3d3d3d
+Dark:   #282828
+
+*/
 
 /* MAIN CONTAINER */
 #MainWrapper{
@@ -87,6 +114,97 @@ body{
         text-decoration: none;
     }
 
+    li.NavPurple {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 42px;
+        color: white;
+        list-style: none;
+        float: left;
+        line-height: 42px; 
+        font-size: 24px;
+    }
+
+    li.NavPurple:hover {
+        background-color: #4f009d;
+        cursor: pointer;
+    }
+
+    li.NavPurple a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    li.NavGreen {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 42px;
+        color: white;
+        list-style: none;
+        float: left;
+        line-height: 42px; 
+        font-size: 24px;
+    }
+
+    li.NavGreen:hover {
+        background-color: #16992f;
+        cursor: pointer;
+    }
+
+    li.NavGreen a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    li.NavRed {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 42px;
+        color: white;
+        list-style: none;
+        float: left;
+        line-height: 42px; 
+        font-size: 24px;
+    }
+
+    li.NavRed:hover {
+        background-color: #c31515;
+        cursor: pointer;
+    }
+
+    li.NavRed a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    li.NavGray {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 42px;
+        color: white;
+        list-style: none;
+        float: left;
+        line-height: 42px; 
+        font-size: 24px;
+    }
+
+    li.NavGray:hover {
+        background-color: #d4d4d4;
+        cursor: pointer;
+    }
+
+    li.NavGray a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
 
     /* Accent Bars */
     #BarBlue{
@@ -104,9 +222,26 @@ body{
     #BarGreen{
         width: 100%;
         height: 5px;
-        background-color: green;
+        background-color: #16992f;
     }
 
+    #BarPurple{
+        width: 100%;
+        height: 5px;
+        background-color: #4f009d;
+    }
+
+    #BarRed{
+        width: 100%;
+        height: 5px;
+        background-color: #c31515;
+    }
+
+    #BarGray{
+        width: 100%;
+        height: 5px;
+        background-color: #d4d4d4;
+    }
 
     /* Slider */
     #Slider{
