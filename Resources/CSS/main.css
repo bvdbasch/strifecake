@@ -394,6 +394,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         
 /* Front page dividers | Sidebar Widgets */
 #RightContainer{
-    width: 277px;
-    border: 1px solid black;
+    margin-left: 15px;
+    float: left;
+    width: 300px;
+    background-image: url('../img/repeat.png');
 }
