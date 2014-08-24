@@ -59,6 +59,6 @@
             include(theme_path()."Pages/Frontpage.php");
         }
     ?>
-
+</div>
 </body>
 </html>
