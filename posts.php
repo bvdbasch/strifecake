@@ -53,7 +53,7 @@
 
     <?php 
         //Manage valid categories here, expand as needed
-        if ($page == 'learn' || $page == 'news' ){
+        if ($page == 'learn' || $page == 'news' || $page == 'competitive' || $page == 'media' || $page == 'blog'){
             include(theme_path()."Pages/Categorypage.php");
         }else{
             include(theme_path()."Pages/Frontpage.php");
