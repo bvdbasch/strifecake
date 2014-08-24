@@ -1,6 +1,5 @@
-<?php theme_include('partials/header'); ?>
-
-<?php theme_include('partials/menu'); ?>
+<?php include(theme_path()."Partials/Header.php"); ?>
+<?php include(theme_path()."Partials/Menu.php");?>
 
         <div id="article_wrap">
         <div id="article_crop">
@@ -10,7 +9,7 @@
             <div class="art_overlay"></div>
             <img class="art_img" src="<?php echo article_custom_field("background_image",theme_url('/assets/images/fallback.png'));?>">    
         </div>
-        
+
         <div class="article_text">
             <span class="art_bound"><?php echo article_markdown(); ?></span>
         </div>
@@ -33,4 +32,3 @@
         </div>
         </div>
 <div class="clear"></div>
-<?php theme_include('partials/footer'); ?>
