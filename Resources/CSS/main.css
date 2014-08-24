@@ -269,8 +269,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
 /* Social icons */
 #Social{
     clear: both;
-    padding-bottom: 10px;
     padding-top: 10px;
+    padding-left: 10px;
     width: 100%;
     height: 27px;
     overflow: hidden;
@@ -287,31 +287,32 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
 
     #CategoryLeft{
         float: left;
-        width: 50%;
-        margin-left: 10px;
-        margin-right: auto;
-        background-color: #f6f6f6;
+        width: 48%;
+        background-color: black;
         border: 1px solid black;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     #CategoryRight{
         float: right;
-        width: 50%;
-        background-color: green;
+        width: 48%;
+        background-color: black;
         border: 1px solid black;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     #CategoryHeader{
         float: left;
-        width: 100%;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         height: 30px;
         line-height: 30px; 
         font-size: 24px;
-        background-color: black;
         color: white;
+        padding-left: 10px;
     }
 
     #CategoryList{
@@ -328,6 +329,41 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
             width: 100%;
             height: 5px;
             background-color: #009AE2;
+        }
+
+        #CatOrange{
+            float: left;
+            width: 100%;
+            height: 5px;
+            background-color: #f2ae00;
+        }
+
+        #CatPurple{
+            float: left;
+            width: 100%;
+            height: 5px;
+            background-color: #4f009d;
+        }
+
+        #CatRed{
+            float: left;
+            width: 100%;
+            height: 5px;
+            background-color: #c31515;
+        }
+
+        #CatGreen{
+            float: left;
+            width: 100%;
+            height: 5px;
+            background-color: #16992f;
+        }
+
+        #CatGray{
+            float: left;
+            width: 100%;
+            height: 5px;
+            background-color: #d4d4d4;
         }
 
         /* Image porperties */
