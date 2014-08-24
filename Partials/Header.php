@@ -4,8 +4,8 @@
     $page = end((explode('/', current_url()))); 
 
     //the code for a random background is found here
-    include(theme_path()."Partials/RandomBackground.php");
+    include(theme_path()."Partials/Widgets/RandomBackground.php");
     //the code for the Category colors has to be maintained in CategoryColor.php
-    include(theme_path()."Partials/CategoryColor.php");
+    include(theme_path()."Partials/Widgets/CategoryColor.php");
 ?>
 

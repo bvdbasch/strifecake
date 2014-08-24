@@ -13,7 +13,7 @@
                 $amountOfPosts=0;
                 while (posts() && $amountOfPosts < 3) {
                     if ( article_category() == 'news') { 
-                        include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
                         $amountOfPosts++;
                     }
                 }
@@ -34,7 +34,7 @@
                 $amountOfPosts=0;
                 while (posts() && $amountOfPosts < 3) {
                     if ( article_category() == 'learn') { 
-                        include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
                         $amountOfPosts++;
                     }
                 }
@@ -56,7 +56,7 @@
                 $amountOfPosts=0;
                 while (posts() && $amountOfPosts < 3) {
                     if ( article_category() == 'competitive') { 
-                        include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
                         $amountOfPosts++;
                     }
                 }
@@ -77,7 +77,7 @@
                 $amountOfPosts = 0;
                 while (posts() && $amountOfPosts < 3) {
                     if ( article_category() == 'media') { 
-                        include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
                         $amountOfPosts++;
                     }
                 }
@@ -99,7 +99,7 @@
                 $amountOfPosts = 0;
                 while (posts() && $amountOfPosts < 3) {
                     if ( article_category() == 'blog') { 
-                        include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
                         $amountOfPosts++;
                     }
                 }
@@ -110,5 +110,5 @@
 </div>
 
 <div id="RightContainer">
-    <?php include(theme_path()."Partials/FrontpageSidebar.php");?>
+    <?php include(theme_path()."Partials/SideBars/FrontpageSidebar.php");?>
 </div>

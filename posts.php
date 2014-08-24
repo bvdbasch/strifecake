@@ -27,7 +27,7 @@
     <!-- SLIDER STARTS HERE -->
     <?php
         if ($page == NULL) {
-            include(theme_path()."Partials/Slider.php"); 
+            include(theme_path()."Partials/Widgets/Slider.php"); 
         }
     ?>          
     <!-- END SLIDER -->
