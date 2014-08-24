@@ -33,7 +33,7 @@
             if (has_posts()) {
                 $amountOfPosts=0;
                 while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'news') { 
+                    if ( article_category() == 'learn') { 
                         include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
                     }
                     $amountOfPosts++;
@@ -55,7 +55,7 @@
             if (has_posts()) {
                 $amountOfPosts=0;
                 while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'news') { 
+                    if ( article_category() == 'competitive') { 
                         include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
                     }
                     $amountOfPosts++;
@@ -76,7 +76,7 @@
             if (has_posts()) {
                 $amountOfPosts = 0;
                 while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'news') { 
+                    if ( article_category() == 'media') { 
                         include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
                     }
                 $amountOfPosts++;
@@ -98,7 +98,7 @@
             if (has_posts()) {
                 $amountOfPosts = 0;
                 while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'news') { 
+                    if ( article_category() == 'blog') { 
                         include(theme_path()."Partials/FrontpageCategoryBlockHTML.php");
                     }
                     $amountOfPosts++;
