@@ -1,10 +1,10 @@
 <?php
 //create Category Array, important update this if you add a new category
 $categories = array(
-                'news' => 'BarBlue',
+                'news' => 'Blue',
                 'media' => 'pink', 
-                'learn' => 'BarOrange', 
-                'competitive' => 'BarGreen' 
+                'learn' => 'Orange', 
+                'competitive' => 'Green' 
             );
 
 //Use in an article                      
@@ -12,5 +12,5 @@ $categories = array(
 if (array_key_exists($page, $categories)) {
     $color = $categories[$page];
 } else{
-    $color = "BarBlue";
+    $color = "Blue";
 }
