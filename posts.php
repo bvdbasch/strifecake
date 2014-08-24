@@ -29,15 +29,22 @@
 </head>
 
 <body>
-<div id="MainWrapper">
-
-    <!-- MENU STARTS HERE -->
+<!-- MENU STARTS HERE -->
+<div id="NavigationWrapper">
     <?php include(theme_path()."Partials/Menu.php"); ?>
-    <!-- END MENU -->
-
+    
     <!-- SLIDER STARTS HERE -->
-    <?php include(theme_path()."Partials/Slider.php"); ?>
+    <?php
+        if ($page == NULL) {
+            include(theme_path()."Partials/Slider.php"); 
+        }
+    ?>          
     <!-- END SLIDER -->
+</div>
+<!-- END MENU -->
+    
+<!-- MAIN CONTENT WRAPPER -->
+<div id="MainWrapper">
 
     <!-- SOCIAL ICONS START HERE -->
     <?php include(theme_path()."Partials/SocialIcons.php"); ?>

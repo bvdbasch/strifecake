@@ -1,5 +1,3 @@
-
-<div id="Navigation">
     <ul id="menu">
     
         <!-- Start Navigation -->
@@ -21,5 +19,4 @@
         <!-- End Searchbar -->
     
     </ul>
-</div>
 <div id="Bar<?php echo $color ?>"></div> <!-- This line parses the category color bar -->
