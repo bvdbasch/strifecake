@@ -316,6 +316,11 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         padding-left: 10px;
     }
 
+        #CategoryHeader a:link    {color: white; text-decoration: none;}
+        #CategoryHeader a:visited {color: white; text-decoration: none;}
+        #CategoryHeader a:hover   {color: white; text-decoration: none;}
+        #CategoryHeader a:active  {color: white; text-decoration: none;}
+
     #CategoryList{
         float: left;
         width: 100%;
