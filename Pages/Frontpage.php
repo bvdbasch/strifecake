@@ -3,8 +3,8 @@
     
     <!-- NEWS CATEGORY-->
     <div id="CategoryLeft">
-        <div id="CategoryHeader">NEWS</div> <!-- Header -->    
-        <div id="CatGreen"></div>           <!-- Accent -->
+        <div id="CategoryHeader"><a href="<?php echo base_url('category/news') ?>">NEWS</a></div>   <!-- Header -->    
+        <div id="CatGreen"></div>                                                                   <!-- Accent -->
 
         <!-- Content -->
         <div id="CategoryList">
@@ -24,8 +24,8 @@
 
     <!-- LEARN CATEGORY-->
     <div id="CategoryRight">
-        <div id="CategoryHeader">LEARN</div>    <!-- Header -->    
-        <div id="CatOrange"></div>              <!-- Accent -->
+        <div id="CategoryHeader"><a href="<?php echo base_url('category/learn') ?>">LEARN</a></div>    <!-- Header -->    
+        <div id="CatOrange"></div>                                                                     <!-- Accent -->
 
         <!-- Content -->
         <div id="CategoryList">
@@ -46,8 +46,8 @@
 
     <!-- COMPETITIVE CATEGORY-->
     <div id="CategoryLeft">
-        <div id="CategoryHeader">COMPETITIVE</div>  <!-- Header -->    
-        <div id="CatPurple"></div>                  <!-- Accent -->
+        <div id="CategoryHeader"><a href="<?php echo base_url('category/competitive') ?>">COMPETITIVE</a></div>  <!-- Header -->    
+        <div id="CatPurple"></div>                                                                               <!-- Accent -->
 
         <!-- Content -->
         <div id="CategoryList">
@@ -67,8 +67,8 @@
 
     <!-- MEDIA CATEGORY-->
     <div id="CategoryRight">
-        <div id="CategoryHeader">MEDIA</div>   <!-- Header -->    
-        <div id="CatRed"></div>                <!-- Accent -->
+        <div id="CategoryHeader"><a href="<?php echo base_url('category/media') ?>">MEDIA</a></div>   <!-- Header -->    
+        <div id="CatRed"></div>                                                                      <!-- Accent -->
 
         <!-- Content -->
         <div id="CategoryList">
@@ -89,8 +89,8 @@
 <br clear="both" />
     <!-- BLOG CATEGORY-->
     <div id="CategoryLeft">
-        <div id="CategoryHeader">BLOG</div>   <!-- Header -->    
-        <div id="CatGray"></div>              <!-- Accent -->
+        <div id="CategoryHeader"><a href="<?php echo base_url('category/blog') ?>">BLOG</a></div>   <!-- Header -->    
+        <div id="CatGray"></div>                                                                    <!-- Accent -->
 
         <!-- Content -->
         <div id="CategoryList">
