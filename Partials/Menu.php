@@ -11,9 +11,9 @@
          <!-- End Navigation -->
         
         <!-- Start Searchbar-->
-        <li>
-            <form action="<?php echo search_url();?>" method="post">
-                <input type="search" class="search-box" id="term" name="term" placeholder="Search" value="<?php echo search_term();?>">
+        <li class="Search">
+            <form class="CleanForm" action="<?php echo search_url();?>" method="post">
+                <input type="search" class="search-box" id="term" name="term" placeholder="Type and hit enter..." value="<?php echo search_term();?>">
             </form>
         </li>
         <!-- End Searchbar -->

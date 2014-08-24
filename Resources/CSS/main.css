@@ -30,6 +30,16 @@ body{
         background-color: black;
     }
 
+    /* Search */
+    li.Search {
+        font-family: 'Droid Sans', sans-serif;
+        float: right;
+        height: 42px;
+        line-height: 40px;
+        margin-right: 10px;
+        list-style: none;
+    }
+
     /* Substyles */
     li.NavBlue {
         font-family: 'Montserrat', sans-serif;
@@ -76,6 +86,7 @@ body{
         color: white;
         text-decoration: none;
     }
+
 
     /* Accent Bars */
     #BarBlue{
