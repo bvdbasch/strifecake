@@ -109,4 +109,6 @@
     </div>
 </div>
 
-<div id="RightContainer">TEST</div>
+<div id="RightContainer">
+    <?php include(theme_path()."Partials/FrontpageSidebar.php");?>
+</div>

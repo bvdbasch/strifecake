@@ -6,4 +6,8 @@
     }
 ?>
 
+<div id="RightContainer">
+    <?php include(theme_path()."Partials/CategoryPageSidebar.php");?>
+</div>
+
 
