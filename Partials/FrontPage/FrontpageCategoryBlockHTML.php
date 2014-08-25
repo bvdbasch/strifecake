@@ -1,28 +1,17 @@
 <article>
  <div id="ArticlePreview">
-     <!-- Preview Image -->
-     <img class="frontpage" src="<?php echo $article['thumb'];?>">
-
      <header>
-        <!-- Article title -->
-        <h1><a href="<?php echo $article['url']; ?>" title="<?php echo $article['title']; ?>"><?php echo $article['title']; ?></a></h1>
-
-        <!-- Article subtitle -->
-        <h2><em>Posted by: <?php echo $article['author'];?> on <time datetime="<?php echo date(DATE_W3C, $article['time']);?>"><?php echo $article['date'];?></time></em></h2>
+<table>
+<tr>
+<td>
+        <h2><em><?php echo date('d M', strtotime($article['date']));?></em></h2>
+</td>
+    <td style="padding-left:5px">
+        <a href="<?php echo $article['url']; ?>" title="<?php echo $article['title']; ?>"><?php echo $article['title']; ?></a>
+    </td>
+</tr>
+</table>
      </header>
 
-     <!-- Article description -->
-     <p>
-        <?php
-            $maxDiscCharacters = 100;
-            $countedDiscription = strlen($article['description']);
-
-            if($countedDiscription > $maxDiscCharacters+1){
-                echo substr($article['description'],0,$maxDiscCharacters)." ...";
-            }else{
-                echo $article['description'];
-            }
-        ?>
-    </p>
 </div>
 </article>

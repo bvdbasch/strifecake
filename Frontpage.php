@@ -1,5 +1,5 @@
 <?php
-$maxPosts = 3;
+$maxPosts = 4;
 include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
 
 ?>
