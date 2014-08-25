@@ -395,10 +395,38 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         #ArticlePreview a:visited {color: black; text-decoration: none;}
         #ArticlePreview a:hover   {color: black; text-decoration: none;}
         #ArticlePreview a:active  {color: black; text-decoration: none;}
-        
+    
+
 /* Front page dividers | Sidebar Widgets */
 #RightContainer{
     float: left;
     width: 290px;
     background-image: url('../img/repeat.png');
 }
+
+    #SidebarWrapper{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+        border: 1px black solid;    
+    }
+
+    #SidebarHeader{
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        height: 30px;
+        line-height: 30px; 
+        font-size: 24px;
+        color: white;
+        padding-left: 10px;
+    }
+
+    #SidebarContent{
+        background-color: #f6f6f6;
+        overflow: hidden;
+        padding: 5px;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 14px;
+    }
