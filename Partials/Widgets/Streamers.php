@@ -19,7 +19,7 @@ $streamers = json_decode($streamerJsonArray);
         </div>
         <div style="display:block;float:left;padding-left:5px">
             <?php
-                echo "<a href='".$streamer->stream->channel->url."'><strong>".$streamer->stream->channel->display_name. "</strong></a><br />";
+                echo "<a target='_blank' href='".$streamer->stream->channel->url."'><strong>".$streamer->stream->channel->display_name. "</strong></a><br />";
                 echo "Playing ".$streamer->stream->game."<br />";
                 echo $streamer->stream->viewers." viewers";
             ?>
