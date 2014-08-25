@@ -48,7 +48,7 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     margin-top 0px;
     padding: 0px;
     display: block;
-    background-image: url('../img/repeat.png');
+    background-image: url('../IMG/repeat.png');
     width: 1090px;
 }
 
@@ -283,7 +283,7 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
 #LeftContainer{
     float: left;
     width: 800px;
-    background-image: url('../img/repeat.png');
+    background-image: url('../IMG/repeat.png');
 }
 
     #CategoryLeft{
@@ -401,7 +401,7 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
 #RightContainer{
     float: left;
     width: 290px;
-    background-image: url('../img/repeat.png');
+    background-image: url('../IMG/repeat.png');
 }
 
     #SidebarWrapper{
