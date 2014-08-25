@@ -16,12 +16,14 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                foreach ($posts['news'] as $article) {
-                    if ($amountOfPosts >= $maxPosts){
-                        break;
+                if (array_key_exists('news', $posts)) {
+                    foreach ($posts['news'] as $article) {
+                        if ($amountOfPosts >= $maxPosts){
+                            break;
+                        }
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                        $amountOfPosts++;
                     }
-                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                    $amountOfPosts++;
                 }
             }
         ?>
@@ -38,12 +40,14 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                foreach ($posts['learn'] as $article) {
-                    if ($amountOfPosts >= $maxPosts){
-                        break;
+                if (array_key_exists('learn', $posts)) {
+                    foreach ($posts['learn'] as $article) {
+                        if ($amountOfPosts >= $maxPosts){
+                            break;
+                        }
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                        $amountOfPosts++;
                     }
-                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                    $amountOfPosts++;
                 }
             }
         ?>
@@ -61,12 +65,14 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                foreach ($posts['competitive'] as $article) {
-                    if ($amountOfPosts >= $maxPosts){
-                        break;
+                if (array_key_exists('competitive', $posts)) {
+                    foreach ($posts['competitive'] as $article) {
+                        if ($amountOfPosts >= $maxPosts){
+                            break;
+                        }
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                        $amountOfPosts++;
                     }
-                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                    $amountOfPosts++;
                 }
             }
         ?>
@@ -83,12 +89,14 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                foreach ($posts['media'] as $article) {
-                    if ($amountOfPosts >= $maxPosts){
-                        break;
+                if (array_key_exists('media', $posts)) {
+                    foreach ($posts['media'] as $article) {
+                        if ($amountOfPosts >= $maxPosts){
+                            break;
+                        }
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                        $amountOfPosts++;
                     }
-                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                    $amountOfPosts++;
                 }
             }
         ?>
@@ -106,12 +114,14 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                foreach ($posts['blog'] as $article) {
-                    if ($amountOfPosts >= $maxPosts){
-                        break;
+                if (array_key_exists('blog', $posts)) {
+                    foreach ($posts['blog'] as $article) {
+                        if ($amountOfPosts >= $maxPosts){
+                            break;
+                        }
+                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                        $amountOfPosts++;
                     }
-                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                    $amountOfPosts++;
                 }
             }
         ?>

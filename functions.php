@@ -2,11 +2,13 @@
 
 function theme_path() {
     $theme_folder = Config::meta('theme');
-    return PATH . 'themes' . DS . $theme_folder . DS;
+    return PATH.'themes'.DS.$theme_folder.DS;
 }
 
-function rwar_latest_posts($limit = 200, $reset = 1) {
-    // only run on the first call
+//works right now, but probably subjected to change
+//todo at the moment fetches last 100 posts instead of 6. However this might need to be cached later.
+function rwar_latest_posts($limit = 100, $reset = 1) 
+{
     if( ! Registry::has('rwar_latest_posts')) {
         // capture original article if one is set
         if($article = Registry::get('article')) {
