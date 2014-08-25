@@ -1,6 +1,11 @@
+<?php
+$maxPosts = 3;
+include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
+
+?>
 <!-- CATEGORIES START HERE -->
 <div id="LeftContainer">
-    
+
     <!-- NEWS CATEGORY-->
     <div id="CategoryLeft">
         <div id="CategoryHeader"><a href="<?php echo base_url('category/news') ?>">NEWS</a></div>   <!-- Header -->    
@@ -11,18 +16,19 @@
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'news') { 
-                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                        $amountOfPosts++;
+                foreach ($posts['news'] as $article) {
+                    if ($amountOfPosts >= $maxPosts){
+                        break;
                     }
+                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                    $amountOfPosts++;
                 }
             }
         ?>
         </div>
     </div>
 
-    <!-- LEARN CATEGORY-->
+ <!-- LEARN CATEGORY-->
     <div id="CategoryRight">
         <div id="CategoryHeader"><a href="<?php echo base_url('category/learn') ?>">LEARN</a></div>    <!-- Header -->    
         <div id="CatOrange"></div>                                                                     <!-- Accent -->
@@ -32,15 +38,16 @@
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'learn') { 
-                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                        $amountOfPosts++;
+                foreach ($posts['learn'] as $article) {
+                    if ($amountOfPosts >= $maxPosts){
+                        break;
                     }
+                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                    $amountOfPosts++;
                 }
             }
         ?>
-        </div>
+       </div>
     </div>
 <br clear="both" />
 
@@ -54,15 +61,16 @@
         <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'competitive') { 
-                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                        $amountOfPosts++;
+                foreach ($posts['competitive'] as $article) {
+                    if ($amountOfPosts >= $maxPosts){
+                        break;
                     }
+                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                    $amountOfPosts++;
                 }
             }
         ?>
-        </div>
+       </div>
     </div>
 
     <!-- MEDIA CATEGORY-->
@@ -74,16 +82,17 @@
         <div id="CategoryList">
         <?php 
             if (has_posts()) {
-                $amountOfPosts = 0;
-                while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'media') { 
-                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                        $amountOfPosts++;
+                $amountOfPosts=0;
+                foreach ($posts['media'] as $article) {
+                    if ($amountOfPosts >= $maxPosts){
+                        break;
                     }
+                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                    $amountOfPosts++;
                 }
             }
         ?>
-        </div>
+       </div>
     </div>
 
 <br clear="both" />
@@ -96,16 +105,17 @@
         <div id="CategoryList">
         <?php 
             if (has_posts()) {
-                $amountOfPosts = 0;
-                while (posts() && $amountOfPosts < 3) {
-                    if ( article_category() == 'blog') { 
-                        include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
-                        $amountOfPosts++;
+                $amountOfPosts=0;
+                foreach ($posts['blog'] as $article) {
+                    if ($amountOfPosts >= $maxPosts){
+                        break;
                     }
+                    include(theme_path()."Partials/FrontPage/FrontpageCategoryBlockHTML.php");
+                    $amountOfPosts++;
                 }
             }
         ?>
-        </div>
+       </div>
     </div>
 </div>
 
