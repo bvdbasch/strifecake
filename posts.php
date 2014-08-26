@@ -49,6 +49,7 @@
             include(theme_path()."Frontpage.php");
         }
     ?>
+
 </div>
 </body>
 </html>

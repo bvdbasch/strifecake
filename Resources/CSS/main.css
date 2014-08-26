@@ -34,11 +34,33 @@ body{
     background-attachment: fixed;
 }
 
+/* Tables */
+table {border-collapse: collapse;width: 100%;}
+table, td, th {border: 0px;}
+tr:nth-of-type(even) {background-color:#F0F0F0 ;} 
+
+/* Image properties */
+img.frontpage{
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* Link porperties */
 a:link {color: #009AE2; text-decoration: none; font-weight: 700;}       /* unvisited link */
 a:visited {color: #009AE2; text-decoration: none; font-weight: 700;}    /* visited link */
 a:hover {color: #009AE2; text-decoration: underline; font-weight: 700;} /* mouse over link */
 a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* active link */
 
+/* Accent Bars */
+#BarBlue{width: 100%; height: 5px;background-color: #009AE2;}
+#BarOrange{width: 100%;height: 5px;background-color: #f2ae00;}
+#BarGreen{width: 100%;height: 5px;background-color: #16992f;}
+#BarPurple{width: 100%;height: 5px;background-color: #4f009d;}
+#BarRed{width: 100%;height: 5px;background-color: #c31515;}
+#BarGray{width: 100%;height: 5px;background-color: #d4d4d4;}
 
 
 /* MAIN CONTAINER */
@@ -47,13 +69,13 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     margin-right: auto;
     margin-top 0px;
     padding: 0px;
-    display: block;
     background-image: url('../IMG/repeat.png');
     width: 1090px;
+    height: auto;
 }
 
 
-/* Navigation NOTE: no longer falls in main wrapper */
+/* Navigation */
 #NavigationWrapper{
     margin-left:auto;
     margin-right: auto;
@@ -91,17 +113,9 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavBlue:hover {
-        background-color: #009AE2;
-        cursor: pointer;
-    }
-
-    li.NavBlue a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-
+    li.NavBlue:hover {background-color: #009AE2; cursor: pointer;}
+    li.NavBlue a {display: block;color: white;text-decoration: none;}
+    
     li.NavOrange {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
@@ -114,21 +128,10 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavOrange:hover {
-        background-color: #f2ae00;
-        cursor: pointer;
-    }
-
-    li.NavOrange a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-
-    li.NavPurple {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
+    li.NavOrange:hover {background-color: #f2ae00;cursor: pointer;}
+    li.NavOrange a {display: block;color: white;text-decoration: none;}
+    
+    li.NavPurple {font-family: 'Montserrat', sans-serif;font-weight: 700;text-transform: uppercase;
         height: 42px;
         color: white;
         list-style: none;
@@ -137,16 +140,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavPurple:hover {
-        background-color: #4f009d;
-        cursor: pointer;
-    }
-
-    li.NavPurple a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
+    li.NavPurple:hover {background-color: #4f009d;cursor: pointer;}
+    li.NavPurple a {display: block;color: white;text-decoration: none;}
 
     li.NavGreen {
         font-family: 'Montserrat', sans-serif;
@@ -160,16 +155,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavGreen:hover {
-        background-color: #16992f;
-        cursor: pointer;
-    }
-
-    li.NavGreen a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
+    li.NavGreen:hover {background-color: #16992f;cursor: pointer;}
+    li.NavGreen a {display: block;color: white;text-decoration: none;}
 
     li.NavRed {
         font-family: 'Montserrat', sans-serif;
@@ -183,16 +170,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavRed:hover {
-        background-color: #c31515;
-        cursor: pointer;
-    }
-
-    li.NavRed a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
+    li.NavRed:hover {background-color: #c31515;cursor: pointer;}
+    li.NavRed a {display: block;color: white;text-decoration: none;}
 
     li.NavGray {
         font-family: 'Montserrat', sans-serif;
@@ -206,227 +185,130 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         font-size: 24px;
     }
 
-    li.NavGray:hover {
-        background-color: #d4d4d4;
-        cursor: pointer;
-    }
+    li.NavGray:hover {background-color: #d4d4d4;cursor: pointer;}
+    li.NavGray a {display: block;color: white;text-decoration: none;}
 
-    li.NavGray a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
 
-    /* Accent Bars */
-    #BarBlue{
-        width: 100%;
-        height: 5px;
-        background-color: #009AE2;
-    }
-
-    #BarOrange{
-        width: 100%;
-        height: 5px;
-        background-color: #f2ae00;
-    }
-
-    #BarGreen{
-        width: 100%;
-        height: 5px;
-        background-color: #16992f;
-    }
-
-    #BarPurple{
-        width: 100%;
-        height: 5px;
-        background-color: #4f009d;
-    }
-
-    #BarRed{
-        width: 100%;
-        height: 5px;
-        background-color: #c31515;
-    }
-
-    #BarGray{
-        width: 100%;
-        height: 5px;
-        background-color: #d4d4d4;
-    }
-
-    /* Slider */
-    #Slider{
-        width: 100%;
-        margin-top: 0px;
-        max-height: 238px;
-        background: pink;
-        overflow: hidden;
-    }
+/* Slider */
+#Slider{
+    width: 100%;
+    margin-top: 0px;
+    max-height: 238px;
+    background: pink;
+    overflow: hidden;
+}
 
     ul#bxslider {
         margin: 180px;
         padding: 0px;
     }
 
+
 /* Social icons */
 #Social{
     clear: both;
     padding-top: 10px;
-    padding-left: 10px;
+    padding-left: 5px;
     width: 100%;
     height: 27px;
     overflow: hidden;
 }
 
 
-/* Front page dividers | Category display */
-#LeftContainer{
-    float: left;
-    width: 800px;
-    background-image: url('../IMG/repeat.png');
+/* Sidebar */
+#SidebarWrapper{
+    float: right;
+    height: 900px;
+    width: 268px;
+    background-color: #f6f6f6;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-top: 10px;
 }
 
-    #CategoryLeft{
-        float: left;
-        width: 48%;
-        background-color: black;
-        border: 1px solid black;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
 
-    #CategoryRight{
-        float: right;
-        width: 48%;
-        background-color: black;
-        border: 1px solid black;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
+/* Categories */
+#CategoryLong{
+    overflow: hidden;
+    width: 797px;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 10px;
+}
 
-    #CategoryHeader{
-        float: left;
+#CategoryShort{
+    display: inline-block;
+    overflow: hidden;
+    width: 393px;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+    #CatHeader{
+        height: 30px;
+        padding: 2px;
+        background-color: black;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
-        height: 30px;
         line-height: 30px; 
         font-size: 24px;
         color: white;
-        padding-left: 10px;
     }
 
-        #CategoryHeader a:link    {color: white; text-decoration: none;}
-        #CategoryHeader a:visited {color: white; text-decoration: none;}
-        #CategoryHeader a:hover   {color: white; text-decoration: none;}
-        #CategoryHeader a:active  {color: white; text-decoration: none;}
+    #CatHeader a:link    {color: white; text-decoration: none;}
+    #CatHeader a:visited {color: white; text-decoration: none;}
+    #CatHeader a:hover   {color: white; text-decoration: none;}
+    #CatHeader a:active  {color: white; text-decoration: none;}
 
-    #CategoryList{
-        float: left;
-        width: 100%;
-        font-family: 'Droid Sans', sans-serif;
-        font-size: 14px;
-        color: black;  
-    }
-
-        /* Category accents */
-        #CatBlue{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #009AE2;
-        }
-
-        #CatOrange{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #f2ae00;
-        }
-
-        #CatPurple{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #4f009d;
-        }
-
-        #CatRed{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #c31515;
-        }
-
-        #CatGreen{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #16992f;
-        }
-
-        #CatGray{
-            float: left;
-            width: 100%;
-            height: 5px;
-            background-color: #d4d4d4;
-        }
-
-        /* Image porperties */
-        img.frontpage{
-            border: 1px solid black;
-            margin: 10px;
-            float: left;
-            max-height: 100px;
-            max-width: 100px;
-        }
-
-        /* Article properties */
-        #ArticlePreview{
-            background-color: #f6f6f6;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        #ArticlePreview h1        {text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
-        #ArticlePreview h2        {text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
-        #ArticlePreview p         {font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-        #ArticlePreview a:link    {color: black; text-decoration: none;}
-        #ArticlePreview a:visited {color: black; text-decoration: none;}
-        #ArticlePreview a:hover   {color: black; text-decoration: none;}
-        #ArticlePreview a:active  {color: black; text-decoration: none;}
+    /* Substyles | Note blue doesn't need link styles, because blue is default */
+    #CatContentBlue{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     
+    #CatContentGreen{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
+    #CatContentGreen h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
+    #CatContentGreen h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentGreen p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
+    #CatContentGreen a:link {color: #16992f; text-decoration: none; font-weight: 700;}
+    #CatContentGreen a:visited {color: #16992f; text-decoration: none; font-weight: 700;}
+    #CatContentGreen a:hover {color: #16992f; text-decoration: underline; font-weight: 700;}
+    #CatContentGreen a:active {color: #16992f; text-decoration: none; font-weight: 700;}
 
-/* Front page dividers | Sidebar Widgets */
-#RightContainer{
-    float: left;
-    width: 290px;
-    background-image: url('../IMG/repeat.png');
-}
+    #CatContentOrange{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
+    #CatContentOrange h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
+    #CatContentOrange h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentOrange p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
+    #CatContentOrange a:link {color: #f2ae00; text-decoration: none; font-weight: 700;}
+    #CatContentOrange a:visited {color: #f2ae00; text-decoration: none; font-weight: 700;}
+    #CatContentOrange a:hover {color: #f2ae00; text-decoration: underline; font-weight: 700;}
+    #CatContentOrange a:active {color: #f2ae00; text-decoration: none; font-weight: 700;}
 
-    #SidebarWrapper{
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 5px;
-        border: 1px black solid;    
-    }
+    #CatContentPurple{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
+    #CatContentPurple h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
+    #CatContentPurple h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentPurple p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
+    #CatContentPurple a:link {color: #4f009d; text-decoration: none; font-weight: 700;}
+    #CatContentPurple a:visited {color: #4f009d; text-decoration: none; font-weight: 700;}
+    #CatContentPurple a:hover {color: #4f009d; text-decoration: underline; font-weight: 700;}
+    #CatContentPurple a:active {color: #4f009d; text-decoration: none; font-weight: 700;}
 
-    #SidebarHeader{
-        background-color: black;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
-        height: 30px;
-        line-height: 30px; 
-        font-size: 24px;
-        color: white;
-        padding-left: 10px;
-    }
+    #CatContentRed{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
+    #CatContentRed h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
+    #CatContentRed h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentRed p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
+    #CatContentRed a:link {color: #c31515; text-decoration: none; font-weight: 700;}
+    #CatContentRed a:visited {color: #c31515; text-decoration: none; font-weight: 700;}
+    #CatContentRed a:hover {color: #c31515; text-decoration: underline; font-weight: 700;}
+    #CatContentRed a:active {color: #c31515; text-decoration: none; font-weight: 700;}
 
-    #SidebarContent{
-        background-color: #f6f6f6;
-        overflow: hidden;
-        padding: 5px;
-        font-family: 'Droid Sans', sans-serif;
-        font-size: 14px;
-    }
+    #CatContentGray{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
+    #CatContentGray h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
+    #CatContentGray h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentGray p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
+    #CatContentGray a:link {color: #d4d4d4; text-decoration: none; font-weight: 700;}
+    #CatContentGray a:visited {color: #d4d4d4; text-decoration: none; font-weight: 700;}
+    #CatContentGray a:hover {color: #d4d4d4; text-decoration: underline; font-weight: 700;}
+    #CatContentGray a:active {color: #d4d4d4; text-decoration: none; font-weight: 700;}

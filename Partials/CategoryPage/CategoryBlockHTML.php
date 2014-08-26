@@ -1,5 +1,5 @@
 <article>
-<div id="ArticlePreview">
+
      <!-- Preview Image -->
      <img class="frontpage" src="<?php echo article_custom_field("thumb",theme_url('Resources/IMG/fallback.png'));?>">
     
@@ -24,5 +24,5 @@
             }
         ?>
     </p>
-</div>
+
 </article>
