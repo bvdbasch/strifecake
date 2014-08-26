@@ -20,6 +20,9 @@
 </head>
 
 <body>
+<!-- MAIN CONTENT WRAPPER -->
+<div id="MainWrapper">    
+    
 <!-- MENU STARTS HERE -->
 <div id="NavigationWrapper">
     <?php include(theme_path()."Partials/Menu.php"); ?>
@@ -34,8 +37,7 @@
 </div>
 <!-- END MENU -->
     
-<!-- MAIN CONTENT WRAPPER -->
-<div id="MainWrapper">
+
 
     <!-- SOCIAL ICONS START HERE -->
     <?php include(theme_path()."Partials/SocialIcons.php"); ?>
@@ -49,6 +51,9 @@
             include(theme_path()."Frontpage.php");
         }
     ?>
+    
+    <!-- FOOTER STARTS HERE -->
+    <div id="footer">FOOOTUURRR</div>
 
 </div>
 </body>

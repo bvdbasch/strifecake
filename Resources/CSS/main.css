@@ -26,6 +26,7 @@ Dark:   #282828
 */
 
 body{
+    height: 100%;
     margin: 0px;
     padding: 0px;
     color: black;
@@ -42,10 +43,13 @@ tr:nth-of-type(even) {background-color:#F0F0F0 ;}
 /* Image properties */
 img.frontpage{
     border: 1px solid black;
-    margin: 10px;
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0px;
+    max-height: 75px;
+    max-width: 75px;
     float: left;
-    max-height: 100px;
-    max-width: 100px;
 }
 
 /* Link porperties */
@@ -71,7 +75,8 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     padding: 0px;
     background-image: url('../IMG/repeat.png');
     width: 1090px;
-    height: auto;
+    min-height:100%;
+    position:relative;
 }
 
 
@@ -218,14 +223,34 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
 /* Sidebar */
 #SidebarWrapper{
     float: right;
-    height: 900px;
-    width: 268px;
-    background-color: #f6f6f6;
-    border: 1px solid black;
+    width: 270px;
+    height: auto;
     overflow: hidden;
     margin-right: 5px;
     margin-top: 10px;
 }
+
+    #SidebarHeader{
+        height: 30px;
+        padding: 2px;
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 30px; 
+        font-size: 24px;
+        color: white;
+    }
+
+    #SidebarContent{
+        background-color: #f6f6f6;
+        overflow: hidden;
+        padding: 5px;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 14px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
 
 
 /* Categories */
@@ -233,9 +258,11 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     overflow: hidden;
     width: 797px;
     border: 1px solid black;
+    background-color: #f6f6f6;
     margin-left: 5px;
     margin-right: auto;
     margin-top: 10px;
+    padding-bottom: 4px;
 }
 
 #CategoryShort{
@@ -265,50 +292,69 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     #CatHeader a:hover   {color: white; text-decoration: none;}
     #CatHeader a:active  {color: white; text-decoration: none;}
 
-    /* Substyles | Note blue doesn't need link styles, because blue is default */
+    /* Substyles */
     #CatContentBlue{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
-    
+    #CatContentBlue h1{text-transform: capitalize; font-size: 22px; margin: 0px; margin-top: 5px; padding: 0px;}
+    #CatContentBlue h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
+    #CatContentBlue p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}    
+    #CatContentBlue a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentBlue a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentBlue a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentBlue a:active {color: black; text-decoration: none; font-weight: 700;}
+
     #CatContentGreen{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     #CatContentGreen h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
     #CatContentGreen h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
     #CatContentGreen p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-    #CatContentGreen a:link {color: #16992f; text-decoration: none; font-weight: 700;}
-    #CatContentGreen a:visited {color: #16992f; text-decoration: none; font-weight: 700;}
-    #CatContentGreen a:hover {color: #16992f; text-decoration: underline; font-weight: 700;}
-    #CatContentGreen a:active {color: #16992f; text-decoration: none; font-weight: 700;}
+    #CatContentGreen a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGreen a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGreen a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentGreen a:active {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGreen tr:hover {background-color: #16992f}
 
     #CatContentOrange{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     #CatContentOrange h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
     #CatContentOrange h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
     #CatContentOrange p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-    #CatContentOrange a:link {color: #f2ae00; text-decoration: none; font-weight: 700;}
-    #CatContentOrange a:visited {color: #f2ae00; text-decoration: none; font-weight: 700;}
-    #CatContentOrange a:hover {color: #f2ae00; text-decoration: underline; font-weight: 700;}
-    #CatContentOrange a:active {color: #f2ae00; text-decoration: none; font-weight: 700;}
+    #CatContentOrange a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentOrange a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentOrange a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentOrange a:active {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentOrange tr:hover {background-color: #f2ae00}
 
     #CatContentPurple{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     #CatContentPurple h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
     #CatContentPurple h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
     #CatContentPurple p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-    #CatContentPurple a:link {color: #4f009d; text-decoration: none; font-weight: 700;}
-    #CatContentPurple a:visited {color: #4f009d; text-decoration: none; font-weight: 700;}
-    #CatContentPurple a:hover {color: #4f009d; text-decoration: underline; font-weight: 700;}
-    #CatContentPurple a:active {color: #4f009d; text-decoration: none; font-weight: 700;}
+    #CatContentPurple a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentPurple a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentPurple a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentPurple a:active {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentPurple tr:hover {background-color: #4f009d}
 
     #CatContentRed{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     #CatContentRed h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
     #CatContentRed h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
     #CatContentRed p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-    #CatContentRed a:link {color: #c31515; text-decoration: none; font-weight: 700;}
-    #CatContentRed a:visited {color: #c31515; text-decoration: none; font-weight: 700;}
-    #CatContentRed a:hover {color: #c31515; text-decoration: underline; font-weight: 700;}
-    #CatContentRed a:active {color: #c31515; text-decoration: none; font-weight: 700;}
+    #CatContentRed a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentRed a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentRed a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentRed a:active {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentRed tr:hover {background-color: #c31515}
 
     #CatContentGray{width: 100%;padding: 2px;background-color: #f6f6f6;font-family: 'Droid Sans', sans-serif;font-size: 14px;color: black;}
     #CatContentGray h1{text-transform: capitalize; font-size: 22px; margin: 0px; padding: 0px; margin-top: 10px;}
     #CatContentGray h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
     #CatContentGray p{font-size: 14px; margin: 0px; padding: 0px; margin-top: 7px;}
-    #CatContentGray a:link {color: #d4d4d4; text-decoration: none; font-weight: 700;}
-    #CatContentGray a:visited {color: #d4d4d4; text-decoration: none; font-weight: 700;}
-    #CatContentGray a:hover {color: #d4d4d4; text-decoration: underline; font-weight: 700;}
-    #CatContentGray a:active {color: #d4d4d4; text-decoration: none; font-weight: 700;}
+    #CatContentGray a:link {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGray a:visited {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGray a:hover {color: black; text-decoration: underline; font-weight: 700;}
+    #CatContentGray a:active {color: black; text-decoration: none; font-weight: 700;}
+    #CatContentGray tr:hover {background-color: #d4d4d4}
+
+#footer {
+    width:100%;
+    margin-top: 20px;
+    height:80px;
+    background:#ee5;
+}

@@ -25,4 +25,5 @@
         ?>
     </p>
 
+    <br clear="both" />
 </article>

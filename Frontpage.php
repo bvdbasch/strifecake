@@ -4,7 +4,7 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
 
 ?>
 
-<div id="SidebarWrapper"></div>
+<div id="SidebarWrapper"><?php include(theme_path()."Partials/SideBars/FrontpageSidebar.php");?></div>
 
 <!-- LAST UPDATED -->
 <div id="CategoryLong">
@@ -15,37 +15,12 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
 <?php 
             if (has_posts()) {
                 $amountOfPosts=0;
-                while (posts() && $amountOfPosts < 2) {
+                while (posts() && $amountOfPosts < 3) {
                         include(theme_path()."Partials/FrontPage/RecentPostsBlockHTML.php");
                     $amountOfPosts++;
                 }
             }
         ?>
-
-<!-- Preview Image -->
-<img class="frontpage" src="<?php echo article_custom_field("thumb",theme_url('Resources/IMG/fallback.png'));?>">
-
- <header>
-<!-- Article title -->
-<h1><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a></h1>
-
-<!-- Article subtitle -->
-<h2><em>Posted by: <?php echo article_author();?> on <time datetime="<?php echo date(DATE_W3C, article_time());?>"><?php echo article_date();?></time></em></h2>
-</header>
-
- <!-- Article description -->
- <p>
- <?php
-    $maxDiscCharacters = 100;
-    $countedDiscription = strlen(article_description());
-
-    if($countedDiscription > $maxDiscCharacters+1){
-        echo substr(article_description(),0,$maxDiscCharacters)." ...";
-    }else{
-        echo article_description();
-    }
- ?>
- </p>
 
 </div>
 </div>
@@ -176,7 +151,7 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
 
 <!-- BLOG CATEGORY-->
 <div id="CategoryShort">
-<div id="CatHeader"><a href="<?php echo base_url('category/media') ?>">MEDIA</a></div>
+<div id="CatHeader"><a href="<?php echo base_url('category/blog') ?>">BLOG</a></div>
 <div id="BarGray"></div>
 <div id="CatContentGray">
     <article>

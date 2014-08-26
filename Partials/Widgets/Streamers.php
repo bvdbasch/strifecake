@@ -4,8 +4,7 @@ $streamerJsonArray = file_get_contents('http://streamapp.srsbsns.tv/Saves/stream
 $streamers = json_decode($streamerJsonArray);
 ?>
 
-<div id= "SidebarWrapper">
-    <div id="SidebarHeader">Streamers</div>
+<div id="SidebarHeader">Streamers</div>
     
     <div id="SidebarContent">
         <?php
@@ -40,4 +39,3 @@ $streamers = json_decode($streamerJsonArray);
         ?>
 
     </div>
-</div>
