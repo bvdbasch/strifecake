@@ -1,6 +1,7 @@
 <?php
 //read JsonArray from page and decode it to array
-$streamerJsonArray = file_get_contents('http://streamapp.srsbsns.tv/Saves/streamers.json');
+//todo create local fileRead
+$streamerJsonArray = file_get_contents('http://streamapp.srsbsns.tv/Saves/TwitchStreamers.json');
 $streamers = json_decode($streamerJsonArray);
 ?>
 
