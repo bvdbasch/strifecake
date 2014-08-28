@@ -5,7 +5,7 @@ $redditJsonArray = file_get_contents('http://streamapp.srsbsns.tv/Saves/RedditFe
 $redditPosts = json_decode($redditJsonArray);
 ?>
 
-<div id="SidebarHeader">subReddit Feed</div>
+<div id="SidebarHeader">Strife subReddit</div>
 <div id="SidebarContent">
     <table>
         <?php
@@ -16,7 +16,7 @@ $redditPosts = json_decode($redditJsonArray);
         <tr>
                     <td>
                         <a href="<?php echo $post->data->url; ?>" title="<?php echo $post->data->title; ?>"><?php echo $post->data->title; ?></a><br />
-                        <h2><em>-<?php echo date('d M - H:i', $post->data->created_utc);?></em></h2>
+                        <h2><em><?php echo date('d M - H:i', $post->data->created_utc);?></em></h2>
                     </td>
                     <?php
                         $aantalRedditPosts++;
