@@ -11,9 +11,9 @@ $streamers = json_decode($streamerJsonArray);
         <?php
             $aantalStreamers = 0;
             foreach($streamers as $streamer) {
-            if($streamer->stream != null) {
+            if($streamer->stream != null && !isset($streamer->error)) {
         ?>
-    
+
         <div style="display:block;float:left;">
             <img width="50" height="50" src="<?php echo $streamer->stream->channel->logo; ?>" />
         </div>
@@ -28,9 +28,9 @@ $streamers = json_decode($streamerJsonArray);
         <?php
             $aantalStreamers++;
         ?>
-        
+
         <br clear="both" />
-        
+
         <?php
                 }
             }
