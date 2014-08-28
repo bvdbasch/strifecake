@@ -10,6 +10,22 @@
 </table>
     <div id="article_end">-</div>
     
-    PAGINATION HERE PLZ!
+    <?php if(has_pagination()){ ?>
+     <div id="pagelink">
+    <nav class="pagination">
+      <?php echo posts_prev(); ?>
+    </nav>
+    </div>
+    
+    <div id="pagelink">
+    <nav class="pagination">
+      <?php echo posts_next(); ?>
+    </nav>
+    </div>
+   
+    
+    <?php } ?>
+
+
     
 </div>
