@@ -1,4 +1,6 @@
-<?php include(theme_path()."Partials/Header.php"); ?>
+<?php 
+$page = article_category();
+include(theme_path()."Partials/Header.php"); ?>
 
 <!-- MAIN CONTENT WRAPPER -->
 <div id="MainWrapper">    
