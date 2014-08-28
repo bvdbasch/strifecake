@@ -35,7 +35,7 @@ $streamers = json_decode($streamerJsonArray);
                 }
             }
         if ($aantalStreamers == 0) {
-            echo "There are currently no streamers online :( ";
+            echo "No one is currently streaming...";
         }
         ?>
 
