@@ -1,4 +1,12 @@
-<?php include(theme_path()."Partials/Header.php"); ?>
+<?php 
+//Fetch Check Which Page we at. Important for what Section we should Load.
+//Either Load Frontpage, Or a Category Page
+//todo: find a better way to get category because this is a dirty dirty dirty hack!!
+$urlArray = (explode('/', current_url()));
+$keyBeforeCategory = array_search ('category', $urlArray);
+$page= $urlArray[$keyBeforeCategory+1];
+
+include(theme_path()."Partials/Header.php"); ?>
 <body>
 <!-- MAIN CONTENT WRAPPER -->
 <div id="MainWrapper">    
