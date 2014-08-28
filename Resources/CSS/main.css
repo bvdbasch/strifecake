@@ -52,6 +52,10 @@ img.frontpage{
     float: left;
 }
 
+img.footer{
+    float: left;
+}
+
 /* Link porperties */
 a:link {color: #009AE2; text-decoration: none; font-weight: 700;}       /* unvisited link */
 a:visited {color: #009AE2; text-decoration: none; font-weight: 700;}    /* visited link */
@@ -352,9 +356,31 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
     #CatContentGray a:active {color: black; text-decoration: none; font-weight: 700;}
     #CatContentGray tr:hover {background-color: #d4d4d4}
 
-#footer {
+#FooterWrapper {
     width:100%;
     margin-top: 20px;
-    height:80px;
-    background:#ee5;
+    background:#3d3d3d;
+    overflow: hidden;
+}
+
+    #FooterInner{
+        padding: 30px;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 14px;
+        color: #f6f6f6;
+    }
+
+    #FooterDivider{
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 1px;
+        height: 90px;
+        background-color: #f8f8f8;
+        box-shadow: 0px 1px 3px #f6f6f6;
+    }
+ 
+    li.Footer{
+       list-style: none;
+    }
 }
