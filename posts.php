@@ -59,6 +59,8 @@
                 <li class="Footer">Facebook</li>
             </ul>
             
+            <br clear="both"/>
+            
             <center>
                 <em><?php echo site_name() ?></em>
             </center>
