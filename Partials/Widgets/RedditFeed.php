@@ -11,7 +11,7 @@ $redditPosts = json_decode($redditJsonArray);
         <?php
             $aantalRedditPosts = 0;
             foreach($redditPosts->data->children as $post) {
-                if($aantalRedditPosts < 4) {
+                if($aantalRedditPosts < 6) {
 ?>
         <tr>
                     <td>
