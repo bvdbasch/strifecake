@@ -179,3 +179,4 @@ include(theme_path()."Partials/FrontPage/PostsArrayBuilder.php");
         </article>
     </div>
 </div>
+<div id="BarClear"> &nbsp </div>

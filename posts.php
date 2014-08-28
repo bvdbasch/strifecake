@@ -25,8 +25,7 @@
             include(theme_path()."Frontpage.php");
         }
     ?>
-    
-    <div id="BarClear"> &nbsp </div>
+
     <!-- FOOTER STARTS HERE -->
         <?php include(theme_path()."Partials/Footer.php");?>
     <!-- END FOOTER -->

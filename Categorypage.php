@@ -1,3 +1,5 @@
+<div id="CategoryPage">
+<table>
 <?php 
     if (has_posts()) {
         while (posts()) {
@@ -5,9 +7,9 @@
         }
     }
 ?>
-
-<div id="RightContainer">
-    <?php include(theme_path()."Partials/SideBars/CategoryPageSidebar.php");?>
+</table>
+    <div id="article_end">-</div>
+    
+    PAGINATION HERE PLZ!
+    
 </div>
-
-

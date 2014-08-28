@@ -1,7 +1,8 @@
 <article>
-
+<tr><td>
      <!-- Preview Image -->
-     <img class="frontpage" src="<?php echo article_custom_field("thumb",theme_url('Resources/IMG/fallback.png'));?>">
+     
+    <img class="categorypage" src="<?php echo article_custom_field("thumb",theme_url('Resources/IMG/fallback.png'));?>">
     
      <header>
         <!-- Article title -->
@@ -24,5 +25,6 @@
             }
         ?>
     </p>
-
+</td>
+</tr>
 </article>

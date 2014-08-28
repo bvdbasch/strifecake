@@ -51,7 +51,7 @@ blockquote {
 /* Tables */
 table {border-collapse: collapse;width: 100%;}
 table, td, th {border: 0px;}
-tr:nth-of-type(even) {background-color:#F0F0F0 ;} 
+tr:nth-of-type(even) {background-color:#F0F0F0 ;}
 
 /* Image properties */
 img.frontpage{
@@ -62,6 +62,17 @@ img.frontpage{
     padding: 0px;
     max-height: 75px;
     max-width: 75px;
+    float: left;
+}
+
+img.categorypage{
+    border: 1px solid black;
+    margin: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0px;
+    max-height: 100px;
+    max-width: 100px;
     float: left;
 }
 
@@ -293,6 +304,22 @@ a:active {color: #009AE2; text-decoration: none; font-weight: 700;}     /* activ
         #SidebarContent h2{text-transform: capitalize; font-size: 10px; margin: 0px; padding: 0px;}
 
 /* Categories */
+#CategoryPage{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    width: auto;
+    background-color: #f6f6f6;
+}
+
+    #CategoryPage td{padding: 5px;}
+    #CategoryPage h1{margin: 0px; font-size:24px;}
+    #CategoryPage h2{margin-top: 3px; font-size:14px;}
+    #CategoryPage a:link    {color: black; text-decoration: none;}
+    #CategoryPage a:visited {color: black; text-decoration: none;}
+    #CategoryPage a:hover   {color: black; text-decoration: none;}
+    #CategoryPage a:active  {color: black; text-decoration: none;}
+
 #CategoryLong{
     overflow: hidden;
     width: 797px;
