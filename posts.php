@@ -36,12 +36,6 @@
     <!-- END SLIDER -->
 </div>
 <!-- END MENU -->
-    
-
-
-    <!-- SOCIAL ICONS START HERE -->
-    <?php include(theme_path()."Partials/SocialIcons.php"); ?>
-    <!-- END SOLCIAL ICONS -->
 
     <?php 
         //Manage valid categories here, expand as needed
