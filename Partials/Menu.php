@@ -19,7 +19,8 @@
         <!-- End Searchbar -->
     
         <!-- Start Social Icons --->
-         <a href="http://strife.srsbsns.tv/feeds/rss"><img src="<?php echo theme_url('Resources/IMG/Social/rss-icon.png') ?>" class="social" alt="RSS" /></a>
+        <a href="http://strife.srsbsns.tv/feeds/rss"><img src="<?php echo theme_url('Resources/IMG/Social/rss-icon.png') ?>" class="social" alt="RSS" /></a>
+        <a href="http://twitch.tv/srsbsnstv"><img src="<?php echo theme_url('Resources/IMG/Social/tt-icon.png') ?>" class="social" alt="TwitchTV" /></a>
         <a href="https://www.twitter.com/srsnation" target="_blank"><img src="<?php echo theme_url('Resources/IMG/Social/tw-icon.png') ?>" class="social" alt="Twitter" />
         <a href="https://www.facebook.com/srsnation" target="_blank"><img src="<?php echo theme_url('Resources/IMG/Social/fb-icon.png') ?>" class="social" alt="Facebook" /></a>            
         <!-- End Social Icons --->
