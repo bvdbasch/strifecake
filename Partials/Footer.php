@@ -13,7 +13,7 @@
         <br clear="both"/>
 
         <center>
-            <em><?php echo site_name() ?></em>
+            <em><?php echo site_name() ?> - <?php echo site_description() ?></em>
         </center>
     </div>
 </div>
