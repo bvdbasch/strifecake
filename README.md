@@ -1,12 +1,12 @@
-strifecake
-==========
+#Strifecake Anchor Theme
+<hr>
 
-Theme name: 	StrifeCake
+A bloggy theme for [Anchor CMS](http://anchorcms.com/ "Anchor CMS")
 
-Description:	Shiny Strife theme for Anchor CMS.
-
-Author name:	Vexxie and Baka 
-
-Site:           http://strife.srsbsns.tv
-
-License:        http://licence.visualidiot.com
+##Details
+- **Theme name:** StrifeCake
+- **Anchor version:** 0.9.2
+- **Description:** Shiny Strife theme for Anchor CMS.
+- **Author name:** Vexxie and Baka 
+- **Demo:** [http://strife.srsbsns.tv](http://strife.srsbsns.tv "srsStrife")
+- **License:** [http://licence.visualidiot.com](http://licence.visualidiot.com)
