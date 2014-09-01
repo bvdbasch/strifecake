@@ -5,7 +5,7 @@ $redditJsonArray = file_get_contents('http://streamapp.srsbsns.tv/Saves/RedditFe
 $redditPosts = json_decode($redditJsonArray);
 ?>
 
-<div id="SidebarHeader">Strife subReddit</div>
+<div id="SidebarHeader"><a href="http://reddit.com/r/strife" target="_blank">Strife subReddit</a></div>
 <div id="SidebarContent">
     <table>
         <?php
