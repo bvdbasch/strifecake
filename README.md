@@ -1,9 +1,9 @@
-#Strifecake Anchor Theme
+# Strifecake Anchor Theme
 <hr>
 
 A bloggy theme for [Anchor CMS](http://anchorcms.com/ "Anchor CMS")
 
-##Details
+## Details
 - **Theme name:** StrifeCake
 - **Anchor version:** 0.9.2
 - **Description:** Shiny Strife theme for Anchor CMS.
